@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TechCon 2024 Conference | Home</title>
+    <title>TechCon 2024 Conference | Contact</title>
     <style>
         nav ul{
             list-style-type: none;
@@ -26,6 +26,23 @@
         nav li a:hover{
             background-color: brown;
         }
+        
+  .map-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+  }
+
+  .map-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
     </style>
 </head>
 <body>
@@ -43,12 +60,34 @@
                     <a href="register.html">Register</a>
                 </li>
                 <li>
-                    <a href="contact.html">Contact</a>
+                    <a href="about.html">About</a>
                 </li>
         </nav>
     </header>
     <main>
-       
+       <p><a href="mailto:email@example.com">Send us an email</a>
+       </p>
+       <p>Follow our <a href="https://web.facebook.com/techconcorp/?_rdc=1&_rdr#" target="_blank">Facebook Page</a></p>
+       <p>Follow our <a href="https://www.linkedin.com/company/techcon-global" target="_blank">Linkedin Page</a></p>
+       <p>Follow our <a href="https://x.com/socaltechcon" target="_blank"> X page</a></p>
+
+       <div class="map-container">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d23762.53229329146!2d-87.6439799631653!3d41.886049159125776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1s%20Chicago%20Hilton!5e0!3m2!1sen!2szm!4v1749394578389!5m2!1sen!2szm"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+        </div>
+        <form action="">
+            <label for="name">Name</label>
+            <input type="text" id="name" required>
+            <label for="email">Email</label>
+            <input type="email" id="email" required>
+            <label for="message">Message</label>
+            <input type="textarea" required id="message">
+            <button type="submit">Send Message</button>
+        </form>
     </main>
     <footer>
      
